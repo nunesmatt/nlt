@@ -1,0 +1,23 @@
+Entry: denoiseperm
+Aliases: denoiseperm
+Keywords: nonparametric
+Description: Denoise a signal using the modified lifting transform and empirical Bayes thresholding
+URL: ../../../library/nlt/html/denoiseperm.html
+
+Entry: fwtnpperm
+Aliases: fwtnpperm
+Keywords: methods
+Description: Perform a modified version of the lifting algorithm
+URL: ../../../library/nlt/html/fwtnpperm.html
+
+Entry: nlt
+Aliases: nlt
+Keywords: nonparametric
+Description: Denoise a signal using a nondecimated lifting transform
+URL: ../../../library/nlt/html/nlt.html
+
+Entry: transmatdualperm
+Aliases: transmatdualperm
+Keywords: methods
+Description: Compute the matrix associated to the modified lifting algorithm
+URL: ../../../library/nlt/html/transmatdualperm.html
