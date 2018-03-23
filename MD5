@@ -1,0 +1,13 @@
+f8a0228373a3a76cf60f98bee746f47b *CONTENTS
+a1021aa85b42c553fac567923290e4d6 *DESCRIPTION
+3996e7c16bfb96fad295ee425815cb4d *Makevars
+047206982eea2914af8b4624a2456597 *NAMESPACE
+890568aa02603880c8df8b3a7eef4413 *R/denoiseperm.R
+196fb8a5bd8246d28dd1fd2b4612950e *R/fwtnpperm.R
+7e3a91eac0e33e9f18244ca4ba1d31a3 *R/nlt.R
+22aaecaf4e3223483636f61d063012c7 *R/transmatdualperm.R
+2268934d460b28955b83b69b20a4e705 *R/zzz.R
+e9262c5e3eff3046a9365197d02a276c *man/denoiseperm.Rd
+0f42fa7db9d8716660212a909ef636bb *man/fwtnpperm.Rd
+bab697c643d24f9762c158a74d5f2434 *man/nlt.Rd
+b7be455c4649a5661448f31baed9bca0 *man/transmatdualperm.Rd
