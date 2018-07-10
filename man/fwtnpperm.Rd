@@ -71,7 +71,7 @@ returned (i.e. \code{W=NULL}).
 \item{clolist}{a boolean vector showing whether or not the neighbours were symmetrical (FALSE) about the removed point during the transform. This is NULL except when \code{LocalPred=AdaptNeigh}.}
 }
 
-\author{Matt Nunes (\email{m.nunes@lancs.ac.uk}), Marina.Knight}
+\author{Matt Nunes (\email{nunesrpackages@gmail.com}), Marina.Knight}
 
 \seealso{\code{\link{AdaptNeigh}}, \code{\link{AdaptPred}}, \code{\link{CubicPred}}, \code{\link{fwtnpmp}}, \code{\link{invtnp}}, \code{\link{LinearPred}}, \code{\link{QuadPred}}     }
 \examples{

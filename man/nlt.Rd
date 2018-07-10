@@ -6,7 +6,8 @@
   Starting with a noise-contaminated signal, we decompose it using a 'nondecimated' lifting algorithm (i.e. by applying the modified lifting transform following several random paths), shrink all the obtained detail coefficients and invert each transform to give an estimated signal. The average of all these estimates is the final proposal for estimating the true (unknown) signal.
 }
 \usage{
-nlt(x, f, J, Pred = AdaptPred, neighbours = 1, closest = FALSE, intercept = TRUE, nkeep = 2, trule = "median",verbose = TRUE,do.orig = FALSE, returnall = FALSE)
+nlt(x, f, J, Pred = AdaptPred, neighbours = 1, closest = FALSE, intercept = TRUE, 
+nkeep = 2, trule = "median",verbose = TRUE,do.orig = FALSE, returnall = FALSE)
 }
 \arguments{
   \item{x}{Vector of any length (possibly irregularly spaced) that gives the grid locations where the signal is observed.}
@@ -35,22 +36,25 @@ nlt(x, f, J, Pred = AdaptPred, neighbours = 1, closest = FALSE, intercept = TRUE
 \note{Use this function together with the "adlift" and "EbayesThresh" packages available from CRAN.}
 \seealso{\code{\link{denoiseperm}}, \code{\link{fwtnpperm}}, \code{\link{fwtnpperm}}, and also \code{invtnp} of package 'adlift'}
 \examples{
-#construct the grid
+# construct the grid
 x<-runif(256) 
 
-#construct the true, normally unknown, signal
+# construct the true, normally unknown, signal
 g<-make.signal2("blocks",x=x) 
 
-#generate noise with mean 0 and signal-to-noise ratio 5
+# generate noise with mean 0 and signal-to-noise ratio 5
 noise<-rnorm(256,mean=0,sd=sqrt(var(g))/5)
 
-#generate a noisy version of g 
+# generate a noisy version of g 
 f<-g+noise 
 
-#decide on a number of random trajectories to be used (below J=100, in paper J=20,30), and apply the nondecimated lifting transform to the noisy signal (x,f) 
-#below we apply the modified lifting transform J times, each time following a different path, and using adaptive prediction with neighbourhoods of size 2
-#in closest configuration; all details are then thresholded using posterior medians and the algorithms inverted
-#the aggregate estimator of g proposed by our method is found in out$aveghat
+# decide on a number of random trajectories to be used (below J=100, in paper J=20,30), and apply
+# the nondecimated lifting transform to the noisy signal (x,f) 
+#
+# below we apply the modified lifting transform J times, each time following a different path, 
+# and using adaptive prediction with neighbourhoods of size 2 in closest configuration; 
+# all details are then thresholded using posterior medians and the algorithms inverted
+# the aggregate estimator of g proposed by our method is found in out$aveghat
 out<-nlt(x,f,J=10,Pred=AdaptPred,neighbours=2,closest=TRUE,intercept=TRUE,nkeep=2,trule="median") 
 }
 \keyword{nonparametric}

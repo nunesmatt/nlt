@@ -36,7 +36,7 @@ sample(1:length(x),(length(x)-keep),FALSE),varonly=FALSE)
   \item{x}{the original gridpoint vector. }
 }
 
-\author{Matt Nunes (\email{m.nunes@lancs.ac.uk}), Marina Knight }
+\author{Matt Nunes (\email{nunesrpackages@gmail.com}), Marina Knight }
 
 \note{ This function has been left in the package for completeness.  However, the transform matrix is (optionally) computed within the forward lifting
 transform function \code{\link{fwtnp}}.
